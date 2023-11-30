@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --primary-color-cyan: hsl(179, 62%, 43%);
+    --primary-color-BrightYellow:hsl(71, 73%, 54%);
+    --Neutral-color-LightGray: hsl(0, 0%, 100%);
+    --Neutral-color-GrayishBlue: hsl(218, 22%, 67%);
+    --ff-karla: font-family: 'Karla', sans-serif;
+    --primary-color-lightCyan: rgb(15,38,38);
+}
+
+
+
+body{
+    display: grid;
+    place-items: center;
+  
+}
+
+
+
+.container{
+    max-width: 24rem;
+    display: grid;    
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    /* border: 1px solid black; */
+    border-radius: 2%;
+}
+
+.item{
+    padding: 1rem;
+    
+}
+.item1{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    background-color: white;
+}
+
+.item1 h1{
+    
+    color: var(--primary-color-cyan);
+   font-size: 1.5rem;
+     font-weight: 900;
+}
+
+.item1 h2{
+    color: var(--primary-color-BrightYellow);
+    font-size: 1.1rem;
+}
+
+
+.item2{
+    background-color: var(--primary-color-cyan);
+}
+
+.item2 h1{
+    
+ color: white;
+ font-size: 1.5rem;
+ font-weight: 900;
+}
+
+.item2 span{
+    font-size: 1rem;
+    color: white;
+}
+
+.item2 h2{
+    color: var(--primary-color-BrightYellow);
+    font-size: 2rem;
+}
+
+.item2 p{
+    color: white;
+}
+
+.item2 button{
+    margin: 1rem;
+    padding: 0.5rem 4rem;
+    background-color: var(--primary-color-BrightYellow);
+    color: white;
+    border: none;
+    border-radius: 0.8rem;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+
+.item3{
+    background-color:rgb(20, 128, 128);
+    color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.item3 h1{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/*responsive */
+
+@media (min-width: 90rem){
+
+    body{
+        display: grid;
+        place-items: center;
+      
+    }
+    
+
+    .container{
+        
+        max-width: 40rem;
+        display: grid;    
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid black;    
+    }
+
+    .item h1{
+        font-size: 2.5rem;
+    }
+
+
+    .item1{
+        grid-area: 1/1/2/3;
+    }
+
+    .item3{
+        border-bottom-left-radius: 0;
+    }
+
+
+}
